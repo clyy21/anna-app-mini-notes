@@ -1,0 +1,18 @@
+{
+  "tool_id": "notes-summary",
+  "type": "node",
+  "name": "Mini Notes Summary",
+  "version": "1.0.0",
+  "description": "A local Executa tool that summarizes Mini Notes using simple rules.",
+  "command": [
+    "node",
+    "index.js"
+  ],
+  "transport": {
+    "type": "stdio",
+    "command": "node",
+    "args": [
+      "index.js"
+    ]
+  }
+}

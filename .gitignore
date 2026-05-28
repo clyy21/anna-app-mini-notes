@@ -1,0 +1,11 @@
+.uv-cache/
+.uv-python/
+.uv-tools/
+.anna-dev/
+
+*.log
+
+.vscode/
+node_modules/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mini Notes</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="/static/anna-apps/_sdk/0.1.0/index.js" defer></script>
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="app-header">
+        <div>
+          <p class="eyebrow">Anna Mini App</p>
+          <h1>Mini Notes</h1>
+        </div>
+        <div class="runtime-status" id="runtimeStatus">UI ready</div>
+      </header>
+
+      <section class="composer" aria-labelledby="composerTitle">
+        <h2 id="composerTitle">Create note</h2>
+        <form id="noteForm" class="note-form">
+          <label class="sr-only" for="noteInput">Note content</label>
+          <textarea
+            id="noteInput"
+            name="note"
+            rows="4"
+            maxlength="240"
+            placeholder="Type a short note, for example: Fix login bug"
+          ></textarea>
+          <div class="form-actions">
+            <span id="inputHint" class="hint">0 / 240</span>
+            <button type="submit" id="saveButton">Save</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="notes-section" aria-labelledby="notesTitle">
+        <div class="section-heading">
+          <h2 id="notesTitle">Notes</h2>
+          <span id="noteCount" class="count">0 items</span>
+        </div>
+        <ol id="notesList" class="notes-list" aria-live="polite">
+          <li class="empty-state">No notes yet.</li>
+        </ol>
+      </section>
+
+      <section class="summary-section" aria-labelledby="summaryTitle">
+        <div class="section-heading">
+          <h2 id="summaryTitle">Summary</h2>
+          <button type="button" id="summarizeButton">Summarize</button>
+        </div>
+        <p id="summaryOutput" class="summary-output">Save a note, then summarize it with the local Executa tool.</p>
+        <p id="errorMessage" class="error-message" role="alert"></p>
+      </section>
+    </main>
+  </body>
+</html>
