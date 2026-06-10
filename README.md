@@ -16,7 +16,9 @@ The app uses:
 .
 |-- manifest.json
 |-- package.json
-|-- README-v2.md
+|-- package-lock.json
+|-- vite.config.js
+|-- README.md
 |-- index.html
 |-- src/
 |   |-- main.js
