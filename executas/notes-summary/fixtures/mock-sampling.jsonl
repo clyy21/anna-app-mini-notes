@@ -1,0 +1,1 @@
+{"ns":"sampling","method":"createMessage","result":{"role":"assistant","content":{"type":"text","text":"You have three notes: one development task, one customer follow-up, and one workshop preparation idea."},"model":"mock-model","stopReason":"endTurn"}}

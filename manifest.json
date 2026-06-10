@@ -1,7 +1,10 @@
 {
   "schema": 2,
   "permissions": [
-    "tools.invoke"
+    "tools.invoke",
+    "storage.read",
+    "storage.write",
+    "llm.complete"
   ],
   "required_executas": [
     {
@@ -49,13 +52,18 @@
     ],
     "host_api": {
       "tools": [
-        "required:notes-summary"
+        "notes-summary"
       ],
       "chat": [],
       "artifact": [],
-      "llm": [],
+      "llm": [
+        "complete"
+      ],
       "fs": [],
-      "storage": [],
+      "storage": [
+        "get",
+        "set"
+      ],
       "prefs": [],
       "window": []
     },

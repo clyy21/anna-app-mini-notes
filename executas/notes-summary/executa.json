@@ -1,18 +1,20 @@
 {
   "tool_id": "notes-summary",
-  "type": "node",
+  "type": "go",
   "name": "Mini Notes Summary",
   "version": "1.0.0",
-  "description": "A local Executa tool that summarizes Mini Notes using simple rules.",
+  "description": "A local Executa tool that summarizes Mini Notes through Anna host sampling.",
   "command": [
-    "node",
-    "index.js"
+    "go",
+    "run",
+    "./cmd/notes-summary"
   ],
   "transport": {
     "type": "stdio",
-    "command": "node",
+    "command": "go",
     "args": [
-      "index.js"
+      "run",
+      "./cmd/notes-summary"
     ]
   }
 }

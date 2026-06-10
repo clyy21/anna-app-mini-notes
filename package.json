@@ -1,0 +1,16 @@
+{
+  "name": "anna-mini-notes",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "dev": "anna-app dev --no-llm",
+    "package:executa": "powershell -ExecutionPolicy Bypass -File executas/notes-summary/scripts/build-local.ps1",
+    "test:executa-jsonrpc": "node scripts/test-executa-jsonrpc.mjs",
+    "validate": "anna-app validate --strict"
+  },
+  "devDependencies": {
+    "vite": "^5.4.11"
+  }
+}

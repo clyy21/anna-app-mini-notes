@@ -2,10 +2,13 @@
 .uv-python/
 .uv-tools/
 .anna-dev/
+.go-cache/
 
 *.log
 
 .vscode/
 node_modules/
+executas/notes-summary/dist/
 .DS_Store
 Thumbs.db
+others/
